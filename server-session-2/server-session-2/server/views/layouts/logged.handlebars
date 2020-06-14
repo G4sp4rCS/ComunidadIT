@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server II</title>
+  <link rel="stylesheet" href="/style/main-style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <p id="time"></p>
+    <span class="signout">
+      <img class="avatar-img" src="/img/profile/{{user.avatarImg}}" alt="">
+      <a href="/logout">Sign out {{user.name}}</a>
+    </span>
+  </nav>
+  {{{body}}}
+  <footer>FOOTER</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

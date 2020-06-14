@@ -1,0 +1,43 @@
+<h2>Lista de personas:</h2>
+
+<input type="text" name="Name" id="nameFilter">
+<button onclick="filter()">Filtrar por nombre</button>
+
+<ul id="person-list">
+  {{#each persons}}
+  <li>
+    <a href="/person/{{this.oid}}">Ver información de {{this.name}} {{this.surname}}</a>
+  </li>
+  {{/each}}
+</ul>
+
+<script>
+
+  const ul = document.getElementById("person-list");
+
+  function filter() {
+    // window.location.href = `/person/home?nameFilter=` + document.getElementById("nameFilter").value;
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.onload = function () {
+
+      ul.innerHTML = "";
+
+      if (this.status === 200) {
+        // Si el resultado llegó bien, se llena la lista
+        const list = JSON.parse(this.responseText);
+
+        list.forEach(item => {
+          ul.innerHTML += `<li><a href="/person/${item.oid}">Ver información de ${item.name} ${item.surname}</a></li>`;
+        });
+      }
+
+    }
+
+    xhr.open("GET", "/person?name=" + document.getElementById("nameFilter").value);
+    xhr.send();
+
+  }
+
+</script>

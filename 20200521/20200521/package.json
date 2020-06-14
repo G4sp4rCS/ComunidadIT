@@ -1,0 +1,14 @@
+{
+  "name": "server-login",
+  "version": "1.0.0",
+  "description": "Server Node + Express de registro y login",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

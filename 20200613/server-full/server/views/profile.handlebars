@@ -1,0 +1,20 @@
+{{#if person}}
+  <h2>Name: {{person.name}} {{person.surname}} ({{person.age}})</h1>
+  <h3>Object ID: {{person.oid}}</h3>
+
+  <img class="profile-picture" src="/img/{{person.profilePic}}" alt="">
+
+  <form action="/person/{{person.oid}}/message" method="post">
+    <input type="text" name="message" id="message">
+    <input type="submit" value="Send message">
+  </form>
+
+  <ul>
+  {{#each person.messageList}}
+    <li>{{this}}</li>
+  {{/each}}
+  </ul>
+
+{{else}}
+  <h2>Person data unaccessible.</h2>
+{{/if}}

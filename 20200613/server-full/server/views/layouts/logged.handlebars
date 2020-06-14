@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server II</title>
+  <link rel="stylesheet" href="/style/logged.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a href="/person/home">HOME</a>
+      </li>
+      <li>
+        <div id="time"></div>
+      </li>
+      <li>
+        <div>
+          <img class="avatar-img" src="/img/profile/{{user.avatarImg}}" alt="">
+          <a href="/auth/logout">Sign out {{user.name}}</a>
+        </div>
+      </li>
+      <li>
+        <a href="/pages/changepass">Change Password</a>
+      </li>
+      <li>
+        <a href="/person/older">Older person in the list</a>
+      </li>
+    </ul>
+
+
+  </nav>
+
+  {{{body}}}
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

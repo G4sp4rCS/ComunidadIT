@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <title>Picture of the day!</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="errorModal" hidden></div>
+
+        <div class="section">
+            <h1 class="white-text center col m10">NASA, picture of the day !</h1>
+        </div>
+
+        <div id="getItContainer">
+            <div row="col m-12">
+                <a class="camera-effect camera-light btn-large right pink" onclick="getPhoto()">
+                    <i class="material-icons medium right">camera_alt</i><strong>Get It!</strong>
+                </a>
+            </div>
+        </div>
+
+        <div class="section" id="sec">
+            <h5 class="white-text" id="textDate">Date: </h5>
+            <h5 class="white-text" id="textTitle">Title: </h5>
+            <blockquote class="white-text" id="textExplanation">Explanation: </blockquote>
+            <div class="row">
+                <div class="col l12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img id="picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

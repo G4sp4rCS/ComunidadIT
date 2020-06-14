@@ -1,0 +1,37 @@
+.profile-picture {
+  height: 200px;
+}
+
+.navbar {
+  background-color: gainsboro;
+  height: 50px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  padding: 2px;
+  margin: 10px;
+}
+
+.navbar div {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.signout {
+  text-align: right;
+}
+
+.avatar-img {
+  height: 24px;
+}

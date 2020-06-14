@@ -1,0 +1,7 @@
+<h2>Lista de personas:</h2>
+
+<ul>
+{{#each persons}}
+  <li><a href="/person/{{this.id}}">Ver información de {{this.name}} {{this.surname}}</a></li>
+{{/each}}
+</ul>

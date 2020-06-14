@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: repeat;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
+}
+
+.sec {
+    display: none;
+}
+
+h5, blockquote {
+    font-family: 'Oswald', sans-serif;
+}
+
+.camera-effect {
+    position: relative;
+    right: 50%;
+}

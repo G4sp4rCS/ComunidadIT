@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <label for="input-user">Usuarix</label>
+  <input type="text" name="input-user" id="input-user">
+  
+  <label for="input-password">Password</label>
+  <input type="password" name="input-password" id="input-password">
+
+  <button onclick="login()">Login</button>
+
+  <a href="/register-page">No tengo usuarix</a>
+
+  <script>
+    function login() {
+      const username = document.getElementById("input-user").value;
+      const password = document.getElementById("input-password").value;
+      console.log(username, password);
+
+      const userBody = JSON.stringify({
+        username: username,
+        password: password
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.onload = function () {
+        console.log(this.responseText);
+
+        if (this.status === 200) {
+          window.location.href = "/home";
+        }
+
+      }
+
+      xhr.open("POST", "/login");
+      xhr.setRequestHeader("Content-Type", "application/json");
+
+      xhr.send(userBody);
+
+    }
+  </script>
+
+</body>
+</html>

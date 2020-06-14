@@ -1,0 +1,95 @@
+[{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f1"
+  },
+  "name": "Andrés",
+  "surname": "Hoyos",
+  "profilePic": "person1.jpg",
+  "age": 26,
+  "messageList": [
+    "Hola, pasé a saludar",
+    "Hola, qué buen perfil",
+    "wqjlaksjdia",
+    "asdfasdfa"
+  ]
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f2"
+  },
+  "name": "Joel",
+  "surname": "Bengolea",
+  "profilePic": "person2.webp",
+  "age": 25,
+  "messageList": [
+    "Holis",
+    "Probando"
+  ]
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f3"
+  },
+  "name": "Micaela",
+  "surname": "Pastor",
+  "profilePic": "person3.jpg",
+  "age": 24
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f4"
+  },
+  "name": "Rocío",
+  "surname": "Campos",
+  "profilePic": "person4.jpg",
+  "age": 25
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f5"
+  },
+  "name": "Blas",
+  "surname": "Romero",
+  "profilePic": "person82.jpg",
+  "age": 26,
+  "messageList": [
+    "test",
+    "test"
+  ]
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f6"
+  },
+  "name": "Carlos",
+  "surname": "Hoyos",
+  "profilePic": "person1.jpg",
+  "age": 26
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f7"
+  },
+  "name": "Pablo",
+  "surname": "Bengolea",
+  "profilePic": "person2.webp",
+  "age": 25
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f8"
+  },
+  "name": "Laura",
+  "surname": "Pastor",
+  "profilePic": "person3.jpg",
+  "age": 24
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631f9"
+  },
+  "name": "Claudia",
+  "surname": "Campos",
+  "profilePic": "person4.jpg",
+  "age": 25
+},{
+  "_id": {
+    "$oid": "5ed6e6a3d61694647d1631fa"
+  },
+  "name": "Agustín",
+  "surname": "Romero",
+  "profilePic": "person82.jpg",
+  "age": 29
+}]

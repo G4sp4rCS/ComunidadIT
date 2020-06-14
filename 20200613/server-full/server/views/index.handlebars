@@ -1,0 +1,23 @@
+<h2>Log in to the site</h2>
+
+<form action="/auth/login" method="post">
+
+  <div class="input-group">
+    <label for="user">Username</label>
+    <input type="text" name="user" id="user">
+  </div>
+
+  <div class="input-group">
+    <label for="pass">Password</label>
+    <input type="password" name="pass" id="pass">
+  </div>
+
+  <input class="login-btn" type="submit" value="Log In">
+
+</form>
+
+<a class="signup-message" href="/pages/signup">Not registered? Sign up here</a>
+
+{{#if message}}
+  <p class="message-{{message.class}}">{{message.text}}</p>
+{{/if}}

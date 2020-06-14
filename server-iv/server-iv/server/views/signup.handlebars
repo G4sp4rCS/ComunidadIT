@@ -1,0 +1,26 @@
+<h2>Sign up</h2>
+
+<form action="/register" method="post">
+
+  <div class="input-group">
+    <label for="user">Username</label>
+    <input type="text" name="user" id="user">
+  </div>
+
+  <div class="input-group">
+    <label for="pass">Create password</label>
+    <input type="password" name="pass" id="pass">
+  </div>
+
+  <div class="input-group">
+    <label for="passRepeat">Repeat password</label>
+    <input type="password" name="passRepeat" id="passRepeat">
+  </div>
+
+  <input class="login-btn" type="submit" value="Sign up">
+
+</form>
+
+{{#if message}}
+  <p class="message-{{message.class}}">{{message.text}}</p>
+{{/if}}

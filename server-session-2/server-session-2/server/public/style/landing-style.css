@@ -1,0 +1,33 @@
+.message-failure {
+  width: 40%;
+  border-color: red;
+  background-color: lightcoral;
+  color: darkred;
+  padding: 7px;
+}
+
+.message-success {
+  width: 40%;
+  border-color: green;
+  background-color: lightgreen;
+  color: darkgreen;
+  padding: 7px;
+}
+
+.signup-message {
+  display: block;
+  margin-top: 20px;
+  color: blue;
+  font-size: 0.8em;
+}
+
+.input-group {
+  margin: 20px 0 20px 0;
+}
+
+.login-btn {
+  border: none;
+  background-color: rgb(64, 64, 189);
+  color: white;
+  padding: 7px;
+}

@@ -1,0 +1,36 @@
+<h2>Sign up</h2>
+
+<form action="/auth/register" method="post" enctype="multipart/form-data">
+
+  <div class="input-group">
+    <label for="user">Username</label>
+    <input type="text" name="user" id="user">
+  </div>
+
+  <div class="input-group">
+    <label for="pass">Create password</label>
+    <input type="password" name="pass" id="pass">
+  </div>
+
+  <div class="input-group">
+    <label for="passRepeat">Repeat password</label>
+    <input type="password" name="passRepeat" id="passRepeat">
+  </div>
+
+  <div class="input-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+  </div>
+
+  <div class="input-group">
+    <label for="picture">Profile picture</label>
+    <input type="file" name="picture" id="picture" accept="image/*">
+  </div>
+
+  <input class="login-btn" type="submit" value="Sign up">
+
+</form>
+
+{{#if message}}
+  <p class="message-{{message.class}}">{{message.text}}</p>
+{{/if}}

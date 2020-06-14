@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register & Login</title>
+</head>
+<body>
+  <label for="input-user">Usuarix</label>
+  <input type="text" name="input-user" id="input-user">
+  
+  <label for="input-password">Password</label>
+  <input type="password" name="input-password" id="input-password">
+
+  <p id="result" style="color: red;"></p>
+
+  <button onclick="register()">Register</button>
+
+  <script>
+    function register() {
+      const username = document.getElementById("input-user").value;
+      const password = document.getElementById("input-password").value;
+      console.log(username, password);
+
+      const userBody = JSON.stringify({
+        username: username,
+        password: password
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.onload = function () {
+        console.log(this.responseText);
+        if (this.status !== 200) {
+          document.getElementById("result").textContent = this.responseText;
+        } else {
+          const resultP = document.getElementById("result");
+          resultP.style.color = "darkgreen";
+          resultP.textContent = "Usuarix registradx";
+
+          setTimeout(() => {
+            window.location.href = "/";
+          }, 2000);
+
+        }
+      }
+
+      xhr.open("POST", "/register");
+      xhr.setRequestHeader("Content-Type", "application/json");
+
+      xhr.send(userBody);
+
+    }
+  </script>
+</body>
+</html>
